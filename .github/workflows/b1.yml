@@ -10,7 +10,4 @@ on:
      
 jobs:
   b1:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: ./.github/workflows/callable.yml
+    uses: ./.github/workflows/callable.yml
