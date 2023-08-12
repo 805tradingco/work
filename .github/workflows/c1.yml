@@ -1,13 +1,17 @@
 name: C
 run-name: C
-on: [push]
+on:
+    workflow_run:
+        workflows: ["B"]
+        types: 
+          - completed
+    
 jobs:
   c1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '16'
       - name: Start
-        run: echo 'running ${{ github.workflow.name }}'
+        run: |
+            echo 'running ${{ github.workflow }}'
+            echo 'github workflow conclusion - ${{ github.event.workflow_run.conclusion }}'
