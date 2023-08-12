@@ -1,6 +1,7 @@
 name: B
 run-name: B
 on:
+    push:
     workflow_run:
         workflows: ["A"]
         types: 
