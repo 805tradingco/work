@@ -2,8 +2,11 @@ name: B
 run-name: B
 on:
     workflow_run:
+        branches: ["main"]
         workflows:
-            - "a1"
+            - "A"
+        types:
+            - completed
      
 jobs:
   b1:

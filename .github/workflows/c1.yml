@@ -2,8 +2,11 @@ name: C
 run-name: C
 on:
     workflow_run:
+        branches: ["main"]
         workflows:
-            - "b1"
+            - "C"
+        types:
+            - completed
 jobs:
   c1:
     runs-on: ubuntu-latest
