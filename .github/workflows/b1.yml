@@ -11,4 +11,4 @@ on:
      
 jobs:
   b1:
-    uses: github.com/805tradingco/work/.github/workflows/callable.yml@callable-ref-test
+    uses: 805tradingco/work/.github/workflows/callable.yml@callable-ref-test
