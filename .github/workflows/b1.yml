@@ -2,7 +2,7 @@ name: B
 run-name: B
 on:
     workflow_run:
-        branches: ["*"]
+        #branches: ["*"]
         workflows:
             - "A"
         types:
