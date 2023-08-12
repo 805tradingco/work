@@ -1,0 +1,18 @@
+name: C
+run-name: C
+on:
+    workflow_run:
+        branches: ["main"]
+        workflows:
+            - "A"
+        types:
+            - completed
+jobs:
+  c1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Start
+        run: |
+            echo 'running ${{ github.workflow }}'
+            echo 'github workflow conclusion - ${{ github.event.workflow_run.conclusion }}'

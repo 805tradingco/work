@@ -1,0 +1,12 @@
+name: A
+run-name: A
+on:
+    push:
+    workflow_dispatch:
+jobs:
+  a1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Start
+        run: echo 'running A1'
