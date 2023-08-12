@@ -1,12 +1,13 @@
 name: B
 run-name: B
 on:
-    workflow_run:
-        #branches: ["*"]
-        workflows:
-            - "A"
-        types:
-            - completed
+    push:
+    # workflow_run:
+    #     #branches: ["*"]
+    #     workflows:
+    #         - "A"
+    #     types:
+    #         - completed
      
 jobs:
   b1:
