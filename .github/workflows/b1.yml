@@ -1,8 +1,8 @@
-name: B1
-run-name: B1
+name: B
+run-name: B
 on: [push]
 jobs:
-  a1:
+  b1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -10,4 +10,4 @@ jobs:
         with:
           node-version: '16'
       - name: Start
-        run: echo 'running ${{ github.workflow.name }}'
+        run: echo 'running $${{ github.workflow }}'

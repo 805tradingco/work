@@ -1,8 +1,8 @@
-name: C1
-run-name: C1
+name: C
+run-name: C
 on: [push]
 jobs:
-  a1:
+  c1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

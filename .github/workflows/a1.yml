@@ -1,5 +1,5 @@
-name: A1
-run-name: A1
+name: A
+run-name: A
 on: [push]
 jobs:
   a1:
