@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Start
         run: |
-            echo 'Updated...'
+            echo 'Updated callable ref test'
             echo 'running ${{ github.workflow }}'
             echo 'github head ref: ${{ github.head_ref || github.ref }}'
             echo 'github.event.workflow: ${{ github.event.workflow }}'
