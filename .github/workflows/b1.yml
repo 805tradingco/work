@@ -4,8 +4,7 @@ on:
     workflow_run:
         workflows:
             - "A"
-        types: 
-            - completed
+     
 jobs:
   b1:
     runs-on: ubuntu-latest
