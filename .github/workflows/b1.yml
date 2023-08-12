@@ -2,7 +2,7 @@ name: B
 run-name: B
 on:
     workflow_run:
-        branches: ["main"]
+        branches: ["main", "on-pr"]
         workflows:
             - "A"
         types:
@@ -16,4 +16,5 @@ jobs:
       - name: Start
         run: |
             echo 'running ${{ github.workflow }}'
+            echo 'github.event.workflow: ${{ github.event.workflow }}'
             echo 'github workflow conclusion - ${{ github.event.workflow_run.conclusion }}'
