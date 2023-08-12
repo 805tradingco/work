@@ -3,7 +3,7 @@ run-name: C
 on:
     workflow_run:
         workflows:
-            - "B"
+            - "b1"
 jobs:
   c1:
     runs-on: ubuntu-latest

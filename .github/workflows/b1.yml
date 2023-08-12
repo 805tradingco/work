@@ -3,7 +3,7 @@ run-name: B
 on:
     workflow_run:
         workflows:
-            - "A"
+            - "a1"
      
 jobs:
   b1:
