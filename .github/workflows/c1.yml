@@ -3,9 +3,10 @@ run-name: C
 on:
     push:
     workflow_run:
-        workflows: ["B"]
+        workflows:
+            - "B"
         types: 
-          - completed
+            - completed
     
 jobs:
   c1:

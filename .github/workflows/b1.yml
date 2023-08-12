@@ -1,11 +1,11 @@
 name: B
 run-name: B
 on:
-    push:
     workflow_run:
-        workflows: ["A"]
+        workflows:
+            - "A"
         types: 
-          - completed
+            - completed
 jobs:
   b1:
     runs-on: ubuntu-latest
